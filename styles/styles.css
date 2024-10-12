@@ -21,7 +21,7 @@ header {
   width: 100%;
   height: 100vh;
   /* background: url('https://c4.wallpaperflare.com/wallpaper/815/737/246/abstract-1920x1200-nature-wallpaper-preview.jpg'); */
-  background: url('../images/main_bg.png');
+  background: url('../images/main_bg.webp');
   background-size: cover;
   display: flex;
   align-items: center;
