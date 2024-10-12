@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  /* 	width: 5px; */
+  background-image: linear-gradient(45deg, #05154c, #213c9b, violet);
+  border-radius: 10px;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  /* background: url('https://c4.wallpaperflare.com/wallpaper/815/737/246/abstract-1920x1200-nature-wallpaper-preview.jpg'); */
+  background: url('../images/main_bg.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'PT Sans', sans-serif;
+  overflow: hidden;
+}
+header .text {
+  width: 80%;
+}
+header .text h1 {
+  font-size: 3em;
+  color: #ddd;
+  margin: 20px;
+  text-align: left;
+  width: 50%;
+}
+header .text p {
+  font-size: 1.4em;
+  color: #bbb;
+  width: 70%;
+  text-align: left;
+  margin: 20px;
+}
+header .text button {
+  margin: 20px;
+  font-size: 1.3em;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  /* background: linear-gradient(150deg, #4f6ec7, violet); */
+  background: #fff;
+  color: #000;
+  cursor: hover;
+}
+
+.blogs {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* featured */
+.blogs .featured {
+  width: 85%;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blogs .featured .left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  justify-items: center;
+  align-items: center;
+}
+.blogs .featured .left .card {
+  width: 85%;
+  height: 90%;
+  /* box-shadow: 0 0 10px #000; */
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 3fr 2fr;
+  padding: 20px;
+}
+.blogs .featured .left .card {FONT-VARIANT: JIS04;width: 80%;}
+
+.blogs .featured .left .card img {
+  width: 100%;
+}
+.blogs .featured .left .card .text {
+  font-family: 'Work Sans', sans-serif;
+}
+.blogs .featured .left .card .text h2 {
+  margin: 10px 0;
+}
+.blogs .featured .left .card .text p {
+  margin: 5px 0;
+  color: #555;
+  width: 90%;
+}
+
+/* Button */
+.read_more {
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  padding: 7px;
+  color: #000;
+  background: #fff;
+}
+/* Button */
+
+.blogs .featured .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.blogs .featured .right .card {
+  width: 90%;
+  height: 33%;
+  margin: 20px;
+  font-family: 'Work Sans', sans-serif;
+}
+.blogs .featured .right .card p {
+  color: #777;
+}
+
+/* topic */
+.blogs .topic {
+  width: 85%;
+  margin: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.blogs .topic h2 {
+  margin: 20px;
+  font-family: 'PT Sans', sans-serif;
+}
+.blogs .topic .cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.blogs .topic .cards .card {
+  font-family: 'Work Sans', sans-serif;
+  width: 270px;
+  margin: 20px;
+}
+.blogs .topic .cards .card img {
+  width: 100%;
+}
+.blogs .topic .cards .card .text {
+  font-family: 'Work Sans', sans-serif;
+}
+.blogs .topic .cards .card .text h2 {
+  margin: 10px 0;
+}
+.blogs .topic .cards .card .text p {
+  margin: 5px 0;
+  color: #555;
+  width: 90%;
+}
+
+
+/* contact */
+.contact {
+  padding: 50px;
+}
+.contact h2{
+  margin: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+.contact .bottom{
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.contact .bottom .left p{
+  font-size: large;
+  width: 50%;
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact .bottom form{
+  width: 400px;
+  height: 350px;
+}
+.contact .bottom form input{
+  width: 90%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #c3c3c3;
+  color: navy;
+  margin: 5px;
+}
+.contact .bottom form textarea{
+  width: 90%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #c3c3c3;
+  color: navy;
+  margin: 5px;
+}
+.contact .bottom form button{
+  width: 99%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #213c9b;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .text h1{
+    width: 70%;
+  }
+}
+@media only screen and (max-height: 400px) {
+  header .text button{
+    margin: 0 20px;
+  }
+  header .text p{
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .blogs .topic .cards .card{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header .text{
+    width: 90%;
+    float: bottom;
+  }
+	header .text h1{
+    font-size: 3.5em;
+    width: 100%;
+    margin: 10px 0;
+    /* text-align: center; */
+  }
+  header .text p{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin: 0;
+    font-size: 1.8em;
+    /* text-align: center; */
+  }
+  header .text button{
+    margin: 10px 0;
+  }
+  .blogs .featured{
+    padding: 0;
+    margin: 50px 0;
+    width: 100%;
+  }
+  .blogs .featured .left{
+    width: 100%;
+    margin: 0;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .blogs .featured .left .card{
+    padding: 0;
+    height: 100%;
+  }
+  .blogs .featured .right{
+    width: 90%;
+    margin: 50px auto;
+  }
+  .blogs .featured .right .card{
+    margin: 25px auto;
+  }
+  .blogs .topic{
+    padding: 0;
+  }
+  .contact{
+    padding: 50px;
+  }
+  .contact .bottom{
+    margin: 0;
+    flex-direction: column;
+  }
+  .contact .bottom .left p{
+    width: 90%;
+  }
+  .contact .bottom form{
+    width: 100%;
+  }
+  .contact .bottom form button{
+    width: 95%;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .contact{
+    padding: 50px 20px;
+  }
+}

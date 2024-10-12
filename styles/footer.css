@@ -1,0 +1,38 @@
+footer {
+    background: #222;
+    height: 80px;
+    display: grid;
+    color: #fff;
+    width: 100%;
+    grid-template-rows: 0.9fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+footer .text {
+    width: 90%;
+    text-align: center;
+}
+footer .links ul {
+    display: flex;
+    flex-direction: row;
+}
+footer .links ul li {
+    margin: 10px;
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 750px) { 
+  footer{
+    grid-template-columns: 0.9fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    height: 100%;
+  }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+}
+.contact {
+  padding: 100px 100px;
+}
+.contact h2{
+  margin: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+.contact .bottom{
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.contact .bottom .left p{
+  font-size: large;
+  width: 50%;
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact .bottom form{
+  width: 400px;
+  height: 350px;
+}
+.contact .bottom form input{
+  width: 90%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #c3c3c3;
+  color: navy;
+  margin: 5px;
+}
+.contact .bottom form textarea{
+  width: 90%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #c3c3c3;
+  color: navy;
+  margin: 5px;
+}
+.contact .bottom form button{
+  width: 99%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: #213c9b;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 750px) {
+    
+  .contact{
+    padding: 100px 20px;
+  }
+  .contact .bottom{
+    margin: 0;
+    flex-direction: column;
+  }
+  .contact .bottom .left p{
+    width: 90%;
+  }
+  .contact .bottom form{
+    width: 100%;
+  }
+  .contact .bottom form button{
+    width: 95%;
+  }
+}

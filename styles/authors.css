@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+body::-webkit-scrollbar {
+width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+/* 	width: 5px; */
+background-image: linear-gradient(45deg, #05154c, #213c9b, violet);
+border-radius: 10px;
+}
+body {
+width: 100vw;
+overflow-x: hidden;
+}
